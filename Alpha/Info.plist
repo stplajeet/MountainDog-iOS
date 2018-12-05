@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Mountain Dog</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,9 +19,44 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.6</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>tel</string>
+		<string>telprompt</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Your photo will be saved in your profile and
+will be displayed at the top of the screen.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Your photo will be saved in your profile and
+will be displayed at the top of the screen.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Your photo will be saved in your profile and
+will be displayed at the top of the screen.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Your photo will be saved in your profile and
+will be displayed at the top of the screen.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Helvetica 57 Condensed_1.ttf</string>
+		<string>helvetica-75-bold-58dc9b14cadf2.ttf</string>
+		<string>helvetica-neue-medium.ttf</string>
+		<string>HelveticaNeue_0.ttf</string>
+		<string>HelveticaNeue-CondensedBlack.ttf</string>
+		<string>HelveticaNeue-BoldCond_1.ttf</string>
+		<string>HelveticaNeue-Light.ttf</string>
+		<string>HelveticaNeue-LightItalic.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -28,11 +65,15 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -41,5 +82,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
 </dict>
 </plist>
