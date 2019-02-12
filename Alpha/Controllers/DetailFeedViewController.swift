@@ -24,6 +24,7 @@ class DetailFeedViewController: UIViewController , UITableViewDelegate, UITableV
     
      var observing = false
     
+    @IBOutlet var heightConstarints: NSLayoutConstraint!
     @IBOutlet var heartBtn: UIButton!
     
     @IBOutlet var webView: UIWebView!
@@ -551,11 +552,12 @@ class DetailFeedViewController: UIViewController , UITableViewDelegate, UITableV
                      imgPlayVideo.isHidden = true
                     imageView.image = UIImage(named: "novideo")
                 }
+                 heightConstarints.constant = 372
             }
             else{
                 imageView.isHidden = true
                  imgPlayVideo.isHidden = true
-                lblConstraint.constant = 5
+                heightConstarints.constant = 0
             }
         }
         

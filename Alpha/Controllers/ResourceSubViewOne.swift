@@ -65,7 +65,7 @@ class ResourceSubViewOne: UIViewController , UITableViewDelegate, UITableViewDat
         tableView.reloadData()
         self.navigationController?.navigationBar.tintColor = UIColor.init(hexString:HEX_COLOUR)
         let navBarColor = navigationController!.navigationBar
-        navBarColor.barTintColor = UIColor.white
+        navBarColor.barTintColor = UIColor.init(hexString:HEX_COLOUR)
         
         self.navigationController?.navigationBar.titleTextAttributes =
             [NSAttributedStringKey.foregroundColor: UIColor.init(red: 60/255.0, green: 119/255.0, blue: 189/255.0, alpha: 1.0),
@@ -109,9 +109,9 @@ class ResourceSubViewOne: UIViewController , UITableViewDelegate, UITableViewDat
         navView.sizeToFit()
         
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.navigationController?.navigationBar.tintColor = UIColor.init(red: 60/255.0, green: 119/255.0, blue: 189/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.tintColor = UIColor.init(hexString:HEX_COLOUR)
         let navBarColor = navigationController!.navigationBar
-        navBarColor.barTintColor = UIColor.init(red: 60/255.0, green: 119/255.0, blue: 189/255.0, alpha: 1.0)
+        navBarColor.barTintColor = UIColor.init(hexString:HEX_COLOUR)
         
         self.navigationController?.navigationBar.titleTextAttributes =
             [NSAttributedStringKey.foregroundColor: UIColor.white,

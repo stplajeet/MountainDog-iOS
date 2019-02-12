@@ -79,9 +79,9 @@ let HEX_COLOUR = "34B6D1"
 
 //BASE URL
 
-let BASE_URL = "https://iamanalpha1.com/api/"
+//let BASE_URL = "https://iamanalpha1.com/api/"
 //let BASE_URL = "http://iaaa.srmtechsol.com/api/"
-//let BASE_URL = "http://54.85.241.222/api/"
+let BASE_URL = "http://54.85.241.222/api/"
 
 // APPKEY API
 let APPKEY_API = "appkey"

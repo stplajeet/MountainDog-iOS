@@ -59,6 +59,7 @@ class ContentViewController: UIViewController {
         let image = UIImageView()
         image.image = UIImage(named: "DPE-Inline")
         image.frame = CGRect(x:-350, y:-10, width:950, height:65)
+        image.contentMode = UIViewContentMode.scaleAspectFit
         navView.sizeToFit()
         // Add both the label and image view to the navView
         navView.addSubview(image)
@@ -69,7 +70,7 @@ class ContentViewController: UIViewController {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationController?.navigationBar.tintColor = UIColor.init(hexString:HEX_COLOUR)
         let navBarColor = navigationController!.navigationBar
-        navBarColor.barTintColor = UIColor.init(red: 60/255.0, green: 119/255.0, blue: 189/255.0, alpha: 1.0)
+        navBarColor.barTintColor = UIColor.init(hexString:HEX_COLOUR)
         self.navigationController?.navigationBar.titleTextAttributes =
             [NSAttributedStringKey.foregroundColor: UIColor.white,
              NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-CondensedBold", size: 30)!]
@@ -335,5 +336,4 @@ class ContentViewController: UIViewController {
         }
     }
 }
-
 
